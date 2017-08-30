@@ -1,0 +1,118 @@
+footer{
+  background : url("../../elements/footer_image.jpg")no-repeat;
+  background-size: cover;
+  .container-footer{
+    background-color : rgba(0, 0, 0, 0.1);
+  }
+  .container-contact{
+    padding : 4em 1em 0 1em;
+    max-width : 1024px;
+    margin : auto;
+    text-align : center;
+    color : white;
+    h2{
+      text-align : center;
+    }
+    p{
+      padding-top : 2em;
+      margin-bottom : 4em;
+    }
+    #mail{
+      @include button($bleu);
+      padding : 0 1em 0 1em;
+    }
+    .form{
+      display : block;
+      max-width: 1024px;
+      height: auto;
+      margin : auto;
+      background-color : rgba(0,0,0,0.6);
+      padding: 2em;
+      margin-top : 2em;
+      position : relative;
+      bottom : 0em;
+      form{
+        max-width: 450px;
+        display : flex;
+        flex-direction : column;
+
+        margin : 0 auto 0 auto;
+        input,textarea{
+          max-width: 100%;
+          //margin : 0 auto 1em auto;
+          height: 35px;
+          border-radius : 5px;
+          border : none;
+          margin-bottom: 1em;
+          padding-left : 1em;
+        }
+        #submit{
+          @include button($rose_c);
+          max-width: 200px;
+          margin-left: 10em;
+          &:hover{
+            background-color : $bleu;
+          }
+        }
+        textarea{
+          height: 150px;
+        }
+      }
+    }
+
+  }
+  .reseaux_sociaux{
+    display : flex;
+    justify-content: center;
+    a img{
+      width: 35px;
+      height: auto;
+      margin-left : 0.5em;
+    }
+  }
+  .footer{
+    width: 100%;
+    background-color : rgba(247,142,85, 0.8);//rgba(243,171,123, 0.6);
+    .container{
+      margin-top : 7em;
+      color : white;
+      display : flex;
+      flex-flow: column;
+      justify-content: space-between;
+      align-items: center;
+      p{
+        padding-bottom : 4em;
+      }
+      img{
+        padding-bottom: 4em;
+      }
+      .reseaux_sociaux{
+        a img{
+          padding-bottom: 0.5em;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 800px) {
+  footer{
+    .container-contact{
+      h2{
+        text-align : left;
+      }
+    }
+    .footer{
+      .container{
+        display : flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        margin : 7em auto 0 auto;
+        p,img,.reseaux_sociaux{
+          padding : 0;
+        }
+      }
+    }
+  }
+}

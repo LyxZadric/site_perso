@@ -1,0 +1,113 @@
+
+  .fact{
+    height: 200px;
+    background-color : $bleu;
+    .fact_text{
+      p{
+        @include fact_text();
+      }
+    }
+    #fact2{
+      display : none;
+    }
+  }
+
+  /**** COMPETENCES ****/
+  .container-competence{
+    margin-bottom : 4em;
+    .proverb{
+      max-width: 500px;
+      text-align: center;
+      color : white;
+      background-color : $rose_c;
+      border-radius: 10px;
+      padding : 0.5em;
+      margin : 4em 1em 4em 1em;
+    }
+    h2{
+      max-width : 1024px;
+      margin : auto;
+      text-align: center;
+      margin-top : 3em;
+      margin-bottom : 3em;
+    }
+    .competences{
+      margin : auto;
+      section{
+        display: block;
+        margin-bottom : 6em;
+
+        .img_competences{
+          max-width: 350px;
+          margin : auto;
+        }
+        img{
+          max-width: 350px;
+          height: auto;
+          margin : auto;
+          margin-bottom : 2em;
+          border-radius: 10px;
+        }
+        h3,p{
+          text-align : center;
+          margin-left: 1em;
+          margin-right: 1em;
+        }
+        p{
+          text-align: justify;
+          margin-top : 2em;
+          margin-bottom: 2em;
+        }
+      }
+    }
+    .slick-dots{
+      margin-bottom : 4em;
+    }
+    .slick-prev:before{
+      color : $rose_c;
+    }
+    .slick-next:before{
+      color : $rose_c;
+    }
+    a{
+      @include button($rose_f);
+      text-decoration: none;
+    }
+  }
+
+  @media only screen and (min-width: 560px) {
+    main{
+      .container-competence{
+        .proverb{
+          margin : auto;
+          margin-top : 2em;
+        }
+      }
+    }
+  }
+  @media only screen and (min-width: 800px) {
+    main{
+      .container-competence{
+
+        h2{
+          text-align: left;
+          margin-left : 1em;
+        }
+        .competences{
+          section{
+            max-height: 300px;
+            display : flex;
+            .img_competences{
+              margin-right: 1em;
+            }
+            img{
+              margin-left : 1em;
+            }
+          }
+        }
+        a{
+          margin-right: 3em;
+        }
+      }
+    }
+  }

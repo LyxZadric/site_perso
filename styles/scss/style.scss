@@ -1,0 +1,29 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+body {
+    padding: 0;
+    margin: 0;
+    overflow-x: hidden;
+}
+.container{
+  max-width: 1024px;
+  margin : auto;
+}
+
+/*** HEADER ****/
+@import "content_styles/header.scss";
+
+/**** MAIN *****/
+    /* Competences */
+    @import "content_styles/competences.scss";
+
+    /* Parcours */
+    @import "content_styles/parcours.scss";
+
+
+    /**** PORTFOLIO *****/
+    @import "content_styles/portfolio.scss";
+
+    /**** CONTACT ******/
+@import "content_styles/footer.scss";

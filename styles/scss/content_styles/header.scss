@@ -1,0 +1,121 @@
+header {
+    color : white;
+    background : url("../../elements/main_image.jpg");
+    .navigation-top {
+        height: 100px;
+        background-color: rgba(247,142,85,0.4);
+        .container{
+          display : flex;
+          align-items: center;
+          padding : 1.5em;
+
+          .burger{
+            cursor : pointer;
+            width: 35px;
+            height: 35px;
+            position : absolute;
+            right: 13%;
+          }
+        }
+        img:nth-of-type(1){
+          width: 150px;
+          height: $a;
+          margin-left: 1em;
+        }
+        // MENU
+        .nav {
+          display : none;
+            ul {
+                display: flex;
+                list-style: none;
+                a,
+                li {
+                    color: white;
+                    text-decoration: none;
+                }
+            }
+        }
+        .nav_responsive {
+          display : none;
+          width: 100%;
+          margin : auto;
+            ul {
+                width: 100%;
+                margin : auto;
+                display: flex;
+                flex-direction : column;
+                position: absolute;
+                top : 100px;
+                left : 0;
+                list-style: none;
+                background-color : white;
+                padding : 0;
+                a,
+                li {
+                    width: 100%;
+                    color: $bleu;
+                    text-decoration: none;
+                    margin : 0.5em auto 0.5em auto;
+                    text-align: center;
+                    font-size: 1em;
+                    &:hover{
+                      width: 100%;
+                      background-color : $gris;
+                      padding : 0.5em 0 0.5em 0;
+                      margin: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .main-image{
+      height: 550px;
+
+      .text-image{
+        padding : 6em 1em 0 1em;
+        max-width: 900px;
+        margin : auto;
+        text-align: center;
+        align-items: stretch;
+
+        h1{
+          font-size : 1.5em;
+          margin-bottom : 3em;
+        }
+        p{
+          margin-bottom : 3em;
+        }
+        a{
+          @include button($rose_f);
+          margin-bottom : 2em;
+        }
+      }
+    }
+}
+
+@media only screen and (min-width: 800px) {
+
+  header {
+    .container{
+      .burger{
+        display : none;
+      }
+    }
+      .navigation-top {
+          .nav {
+            display : flex;
+            position : absolute;
+            right: 13%;
+            ul{
+              li{
+                margin-left: 2em;
+              }
+            }
+          }
+          .nav_responsive{
+            display : none;
+          }
+      }
+  }
+}

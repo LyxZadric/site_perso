@@ -1,0 +1,96 @@
+/*
+Error: Undefined mixin 'button'.
+        on line 21 of scss/content_styles/parcours.scss, in `button'
+        from line 21 of scss/content_styles/parcours.scss
+
+16:     margin-bottom : 3em;
+17:     display : flex;
+18:     flex-flow : row wrap;
+19:     justify-content: center;
+20:     button{
+21:       @include button($rose_c);
+22:       border : 1px solid white;
+23:       margin : 1em 2em 1em 1em;
+24:       font-size : 1em;
+25:         &:hover{
+26:          background-color : white;//#bababa;
+
+Backtrace:
+scss/content_styles/parcours.scss:21:in `button'
+scss/content_styles/parcours.scss:21
+/var/lib/gems/1.9.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:351:in `block in visit_mixin'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/lib/sass/stack.rb:98:in `block in with_mixin'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/lib/sass/stack.rb:98:in `with_mixin'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:349:in `visit_mixin'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `map'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `map'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block (2 levels) in visit_rule'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `map'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:433:in `block in visit_rule'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:431:in `visit_rule'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `block in visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/lib/sass/stack.rb:79:in `block in with_base'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/lib/sass/stack.rb:115:in `with_frame'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/lib/sass/stack.rb:79:in `with_base'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:160:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `block in visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `map'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:52:in `visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:169:in `block in visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:181:in `with_environment'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:168:in `visit_children'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `block in visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:188:in `visit_root'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/lib/sass/tree/visitors/base.rb:36:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:159:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/lib/sass/tree/visitors/perform.rb:8:in `visit'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/lib/sass/tree/root_node.rb:36:in `css_tree'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/lib/sass/tree/root_node.rb:29:in `render_with_sourcemap'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/lib/sass/engine.rb:381:in `_render_with_sourcemap'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/lib/sass/engine.rb:298:in `render_with_sourcemap'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:492:in `update_stylesheet'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:215:in `block in update_stylesheets'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `each'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:209:in `update_stylesheets'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:473:in `on_file_changed'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/lib/sass/plugin/compiler.rb:331:in `block in watch'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/vendor/listen/lib/listen/listener.rb:252:in `call'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/vendor/listen/lib/listen/listener.rb:252:in `on_change'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/vendor/listen/lib/listen/listener.rb:290:in `block in initialize_adapter'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/vendor/listen/lib/listen/adapters/polling.rb:48:in `call'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/vendor/listen/lib/listen/adapters/polling.rb:48:in `poll_changed_directories'
+/var/lib/gems/1.9.1/gems/sass-3.4.23/vendor/listen/lib/listen/adapter.rb:299:in `block in start_poller'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Error: Undefined mixin 'button'.\A         on line 21 of scss/content_styles/parcours.scss, in `button'\A         from line 21 of scss/content_styles/parcours.scss\A \A 16:     margin-bottom : 3em;\A 17:     display : flex;\A 18:     flex-flow : row wrap;\A 19:     justify-content: center;\A 20:     button{\A 21:       @include button($rose_c);\A 22:       border : 1px solid white;\A 23:       margin : 1em 2em 1em 1em;\A 24:       font-size : 1em;\A 25:         &:hover{\A 26:          background-color : white;//#bababa;"; }

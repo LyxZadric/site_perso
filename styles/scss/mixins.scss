@@ -1,0 +1,22 @@
+@mixin button($color){
+  display : flex;
+  justify-content: center;
+  align-items: center;
+  width: 200px;
+  height: 40px;
+  margin : auto;
+  background-color : $color;
+  border-radius: 10px;
+  border : 0;
+  color : white;
+  text-decoration: none;
+  text-align: center;
+}
+
+@mixin fact_text(){
+  margin : 0;
+  max-width: 100%;
+  color : white;
+  text-align : center;
+  padding-top :90px;
+}
